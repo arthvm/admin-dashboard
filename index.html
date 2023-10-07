@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5cb30fd77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Admin Dashboard</title>
 </head>
 
@@ -14,7 +16,7 @@
                 <h1>Dashboard</h1>
             </div>
             <div class="pages">
-                <span class="home">Home</span>
+                <span class="home current">Home</span>
                 <span class="profile">Profile</span>
                 <span class="messages">Messages</span>
                 <span class="History">History</span>
@@ -30,11 +32,13 @@
         <div class="header">
             <div class="search-menu">
                 <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text">
                 </div>
                 <div class="profile-settings">
-                    <a href="" class="profile-link">
-                        <img src="" alt="Profile Picture">
+                    <i class="fa-regular fa-bell fa-lg" title="Toggle Notifications"></i>
+                    <a href="https://github.com/arthvm" class="profile-link" rel="noreferrer noopener" title="Profile">
+                        <img src="./src/ProfilePicture.jpg" alt="Profile Picture" class="profile-picture">
                     </a>
                 </div>
             </div>
@@ -48,7 +52,9 @@
                     </h2>
                 </div>
                 <div class="content-settings">
-                    <input type="button" class="add-project">
+                    <button class="add-project" title="New Project">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                    </button>
                 </div>
             </div>
 
@@ -57,19 +63,137 @@
             <div class="projects">
                 <h3 class="content-header">Your Projects</h3>
                 <div class="projects-container">
-
+                    <a href="https://arthvm.github.io/landing-page/" class="project-card" rel="noreferrer noopener">
+                        <div class="project-text">
+                            <h4 class="project-title">Landing Page</h4>
+                            <p class="project-description">A basic landing page made only with flexbox CSS and html.
+                            </p>
+                        </div>
+                        <div class="project-options">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </a>
+                    <a href="https://arthvm.github.io/rock-paper-scissors/" class="project-card"
+                        rel="noreferrer noopener">
+                        <div class="project-text">
+                            <h4 class="project-title">Rock Paper Scissors</h4>
+                            <p class="project-description">A rock paper scissor game made using JavaScript, CSS and
+                                html.
+                            </p>
+                        </div>
+                        <div class="project-options">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </a>
+                    <a href="https://arthvm.github.io/etch-a-sketch/" class="project-card" rel="noreferrer noopener">
+                        <div class="project-text">
+                            <h4 class="project-title">Etch-a-Skecth</h4>
+                            <p class="project-description">A pixelart page made using JavaScript, CSS and html. Fun
+                                fact, no
+                                grid css used!</p>
+                        </div>
+                        <div class="project-options">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </a>
+                    <a href="https://arthvm.github.io/js-calculator/" class="project-card" rel="noreferrer noopener">
+                        <div class="project-text">
+                            <h4 class="project-title">Calculator</h4>
+                            <p class="project-description">A full working calculator made using JavaScript, CSS and
+                                html.
+                                The designed was based on the iPhone calculator's design.</p>
+                        </div>
+                        <div class="project-options">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </a>
+                    <a href="https://arthvm.github.io/sign-up-form/" class="project-card" rel="noreferrer noopener">
+                        <div class="project-text">
+                            <h4 class="project-title">Sign-up Form</h4>
+                            <p class="project-description">A sign-up form made using JavaScript, CSS and html. It
+                                features
+                                client-side validation for the required inputs.</p>
+                        </div>
+                        <div class="project-options">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="announcements">
                 <h3 class="content-header">Announcements</h3>
-                <div class="announcements-container">
-
+                <div class="announcements-container content-container">
+                    <div class="announcement">
+                        <h4 class="announcement-title">New Trending Section!</h4>
+                        <p class="annoucement-text">The new section contains the top 4 live preview of dashboards from
+                            the TOP curriculum.</p>
+                    </div>
+                    <hr>
+                    <div class="announcement">
+                        <h4 class="announcement-title">New Announcements Section!</h4>
+                        <p class="annoucement-text">Stay tuned for exciting updates and surpises coming your way!</p>
+                    </div>
+                    <hr>
+                    <div class="announcement">
+                        <h4 class="announcement-title">Dashboard is officially out!</h4>
+                        <p class="annoucement-text">It's an honor to annouce that our dashboard application is finally
+                            out. We are excited to have you here with us!</p>
+                    </div>
                 </div>
             </div>
             <div class="trendings">
                 <h3 class="content-header">Trending</h3>
-                <div class="trendings-container">
-
+                <div class="trendings-container content-container">
+                    <div class="profile">
+                        <a href="https://hmjatt.github.io/Admin-Dashboard/" class="profile-link"
+                            rel="noreferrer noopener" title="Profile">
+                            <img src="./src/Harmeet.jpg" alt="Profile Picture" class="profile-picture">
+                        </a>
+                        <div class="profile-text">
+                            <h4 class="profile-name">Harmeet Matharoo</h4>
+                            <span class="profile-username">@hmjatt</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <a href="https://ilyaeru.github.io/TOP-Project-Admin-Dashboard/" class="profile-link"
+                            rel="noreferrer noopener" title="Profile">
+                            <img src="./src/Ilya.png" alt="Profile Picture" class="profile-picture">
+                        </a>
+                        <div class="profile-text">
+                            <h4 class="profile-name">Ilya</h4>
+                            <span class="profile-username">@ilyaeru</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <a href="https://deanwagner.github.io/dashboard/" class="profile-link" rel="noreferrer noopener"
+                            title="Profile">
+                            <img src="./src/Dean.png" alt="Profile Picture" class="profile-picture">
+                        </a>
+                        <div class="profile-text">
+                            <h4 class="profile-name">Dean Wagner</h4>
+                            <span class="profile-username">@deanwagner</span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <a href="https://mmackz.github.io/admin-dashboard/" class="profile-link"
+                            rel="noreferrer noopener" title="Profile">
+                            <img src="./src/Mmackz.jpg" alt="Profile Picture" class="profile-picture">
+                        </a>
+                        <div class="profile-text">
+                            <h4 class="profile-name">Mmackz</h4>
+                            <span class="profile-username">@mmackz</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
